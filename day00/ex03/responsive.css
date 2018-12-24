@@ -1,0 +1,74 @@
+header{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  margin: 5px 0;
+  font-size: 1.5vw;
+}
+
+img{
+  border-radius: 50%;
+}
+
+p{
+  margin: 3px;
+  font-size: 1vw;
+}
+
+p.mass-atom{
+  text-align: right;
+}
+
+table{
+  width: 100%;
+}
+
+td{
+  width: 5.55555%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* others */
+  
+
+/* personalized colors */
+.bleuColor{
+background-color: #6be2f4;
+}
+
+.clairblueColor{
+background-color: #caf5f9;
+}
+.greenColor{
+background-color: #178e05;
+}
+.jauneColor{
+background-color: #fff605;
+}
+.maroonColor{
+background-color: #F4BBC3;
+}
+.orangeColor{
+background-color: #f9b222;
+}
+
+.pinkColor{
+background-color: #F5C4FB;
+}
+
+.ponkColor{
+background-color: #F1A0CB;
+}
+
+.redColor{
+background-color: #ED6F6B;
+}
+.vertColor{
+background-color: #2af79e;
+}
+.yallowColor{
+background-color: #FAE0B4;
+}
