@@ -35,13 +35,6 @@ a:hover{
   display: block;
 }
 
-.dropdown:hover > .drop-nav li{
-  display: block;
-  font-size: 5px;
-  margin: 20px;
-  text-align: justify;
-  padding: 5px;
-}
 i {
   margin-right: 10px;
 }
