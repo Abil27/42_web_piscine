@@ -1,23 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx.js                                             :+:      :+:    :+:   */
+/*   ft_split.js                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/25 18:57:23 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/25 21:24:05 by ahoussei         ###   ########.fr       */
+/*   Created: 2018/12/25 18:59:41 by ahoussei          #+#    #+#             */
+/*   Updated: 2018/12/25 21:23:05 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*réaliser, c’est un programme php qui affiche 1000 fois la lettre X, un retour à la ligne, et avec comme contrainte qu’il ne doit pas dépasser les 100 chars.*/
-function print(){
-  i = 0;
-  while (i < 1000){
-    if(i === 100) break
-    process.stdout.write("X");
-    i++;
-  }
-}
-
-print()
+/* Réalisez la fonction ft_split. Elle prend une chaine de caractères en paramètre, et renvoie un tableau trié des différents mots, initialement séparés par un ou des espaces dans la chaine originale. Votre rendu ft_split.js sera inclus dans un fichier js de test*/

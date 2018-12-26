@@ -6,11 +6,11 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/25 18:54:29 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/25 18:56:16 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/25 21:23:38 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+/* Faites donc un programme en php qui vous demande gentiment un numéro de pile de linge, et qui vous répond s’il est pair (donc lavé avec Olympe) ou s’il est impair.*/
 // const rlSync = require("readline-sync");
 // while(1){
 //   let userInput = rlSync.question("Entrez un nombre: ");

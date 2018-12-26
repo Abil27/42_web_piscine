@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx.js                                             :+:      :+:    :+:   */
+/*   aff_param.js                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/25 18:57:23 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/25 21:24:05 by ahoussei         ###   ########.fr       */
+/*   Created: 2018/12/25 19:11:31 by ahoussei          #+#    #+#             */
+/*   Updated: 2018/12/25 21:22:19 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*réaliser, c’est un programme php qui affiche 1000 fois la lettre X, un retour à la ligne, et avec comme contrainte qu’il ne doit pas dépasser les 100 chars.*/
-function print(){
-  i = 0;
-  while (i < 1000){
-    if(i === 100) break
-    process.stdout.write("X");
-    i++;
-  }
-}
+/*Très classique, ce programme affiche ses différents paramètres de la ligne de com- mande, dans l’ordre reçu. Le nom du programme ne s’affiche pas.*/
+// console.log(process.argv[2])
 
-print()
+let args = process.argv.slice(2);
+
+for(let arg of args){
+  console.log(arg)
+}
