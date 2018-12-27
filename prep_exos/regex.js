@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx.js                                             :+:      :+:    :+:   */
+/*   regex.js                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/25 18:57:23 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/27 13:17:47 by ahoussei         ###   ########.fr       */
+/*   Created: 2018/12/26 21:04:53 by ahoussei          #+#    #+#             */
+/*   Updated: 2018/12/26 21:11:05 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*réaliser, c’est un programme php qui affiche 1000 fois la lettre X, un retour à la ligne, et avec comme contrainte qu’il ne doit pas dépasser les 100 chars.*/
-function print(){
-  i = 0;
-  while (i < 1000){
-    // if(i === 100) break
-    process.stdout.write("X");
-    i++;
-  }
-}
+let pattern = /[0-9]{10}/;
 
-print()
+let word = " My phone number is 5103998466";
+
+let result = pattern.test(word)
+
+console.log(result)
+
+// Match all occurence
+ let pattern2 = /[0-9]{10}/g;
+ let word2 = "My phone numbers are 5103998466 and 51012349876";
+ let result2 = word2.match(pattern2);
+
+ console.log(result2)

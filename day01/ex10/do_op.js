@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx.js                                             :+:      :+:    :+:   */
+/*   do_op.js                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/25 18:57:23 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/27 13:17:47 by ahoussei         ###   ########.fr       */
+/*   Created: 2018/12/26 20:10:22 by ahoussei          #+#    #+#             */
+/*   Updated: 2018/12/26 20:39:03 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*réaliser, c’est un programme php qui affiche 1000 fois la lettre X, un retour à la ligne, et avec comme contrainte qu’il ne doit pas dépasser les 100 chars.*/
-function print(){
-  i = 0;
-  while (i < 1000){
-    // if(i === 100) break
-    process.stdout.write("X");
-    i++;
-  }
+if(process.argv != 4){
+  console.log("Incorrect Paramters")
+  exit();
 }
 
-print()
+switch(calc(process.argv[2], " \t")){
+  case("+"):
+    
+}
