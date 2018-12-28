@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/25 20:53:43 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/25 21:19:57 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/28 13:17:04 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 let args = process.argv.slice(2)
 
-array = args.sort();
+res = args.join(" ").split(" ").sort()
 
-array.forEach((element) => {
-  console.log(element);
-})
+res.forEach((element) => {
+  console.log(element)
+});
+
+
 

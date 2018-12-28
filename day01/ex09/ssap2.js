@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/27 21:15:51 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 12:19:38 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/28 12:20:35 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,3 @@ input.sort(function (a, b){
 input.forEach((element) => {
    console.log(element);
  });
-
- try
