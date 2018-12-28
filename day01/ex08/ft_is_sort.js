@@ -6,26 +6,35 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/27 14:22:16 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/27 19:47:42 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/28 12:12:50 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-arr = ['g', 'a', 'b', 'c', 'd', 'e'];
+arr = ['a', 'b', 'c', 'd'];
+arr1 = ["123", "a123", "123a"];
 arr2 = ["!/@#;^", "42", "Hello World", "salut", "zZzZzZz"];
 arr3 = ["Et qu’est-ce qu’on fait maintenant ?"];
+arr4 = [3, 5, 9];
+arr5 = [7, 4, 8, 11]
 
-function ft_is_sort(array){
-  for(let i = 0; i < array.length; i++){
-    if(array[i] < array[i + 1]){
-      // return true;
-      console.log("Array is sorted"); break;
-    } else {
-      // return false;
-      console.log("array is not sorted"); break;
+function isSort(arr){
+  for(i = 0; i < arr.length - 1; i++){
+    if(arr[i] > arr[i + 1]){
+      return false;
     }
   }
+  return true;
 }
 
-ft_is_sort(arr);
-ft_is_sort(arr2);
-ft_is_sort(arr3);
+function ifSort(tab){
+  if(isSort(tab)){
+    console.log("Is Sort")
+  } else { console.log("Is not sort")}
+}
+
+ifSort(arr)
+ifSort(arr1)
+ifSort(arr2)
+ifSort(arr3)
+ifSort(arr4)
+ifSort(arr5)
