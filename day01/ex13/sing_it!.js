@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/28 13:58:11 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 21:28:01 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/28 21:32:43 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,5 @@ args = process.argv.slice(2).join('');
     console.log("Nan c'est parce que c'est le premier avril")
   }
     
+
+  //not completed have to the last statement

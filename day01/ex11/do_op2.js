@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/28 20:25:00 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 21:07:27 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/28 21:31:52 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,5 @@ input = process.argv.slice(2).join('')
   
   if(input.length > 2) 
      process.stdout.write("Syntax error")
+
+//  need to check for errors

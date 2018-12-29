@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/27 21:15:51 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 20:23:33 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/28 21:33:19 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,6 @@ res.sort(function (a, b){
 res.forEach((element) =>{
     console.log(element);
 })
+
+
+// doesn't print caracters
