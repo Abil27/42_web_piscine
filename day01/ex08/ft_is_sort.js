@@ -6,9 +6,13 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/27 14:22:16 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 12:12:50 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/28 20:23:01 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Il s’agit pour vous de réaliser une petite fonction qui renvoie vrai ou faux selon que
+le tableau passé en paramètres est trié ou non */
+
 
 arr = ['a', 'b', 'c', 'd'];
 arr1 = ["123", "a123", "123a"];
