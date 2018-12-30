@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/28 20:25:00 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/29 16:59:25 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/29 19:00:42 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,14 @@ message d’erreur “Syntax Error” vient compléter le précédent dans le ca
 ne serait pas correcte. Il peut ne pas y avoir d’espace entre les chiffres et l’opérateur, ou
 bien plusieurs. Le résultat attendu reste le même */
 
+if (process.argv.length != 3 || process.argv[2] === "")
+  return process.stdout.write("Incorrect parameters");
 
-if(process.argv.length != 3 || process.argv[2] === "")
-    return process.stdout.write("Incorrect parameters")
-
-try{
-    input = process.argv.slice(2).join('')
-      return console.log(eval(input))
-} catch (err){
-       return process.stdout.write("Syntax error")
+try {
+  input = process.argv.slice(2).join("");
+  return console.log(eval(input));
+} catch (err) {
+  return process.stdout.write("Syntax error");
 }
-  
 
 //  need to check for errors
