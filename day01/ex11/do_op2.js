@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/28 20:25:00 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 21:31:52 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/29 16:16:28 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,13 @@ bien plusieurs. Le résultat attendu reste le même */
 if(process.argv.length != 3)
     return process.stdout.write("Incorrect parameters")
 
-input = process.argv.slice(2).join('')
-  return console.log(eval(input))
+try{
+    input = process.argv.slice(2).join('')
+      return console.log(eval(input))
+} catch (err){
+    if(input.length > 2) 
+       process.stdout.write("Syntax error")
+}
   
-  if(input.length > 2) 
-     process.stdout.write("Syntax error")
 
 //  need to check for errors

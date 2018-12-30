@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/28 13:58:11 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 21:32:43 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/29 13:57:02 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,4 @@ args = process.argv.slice(2).join('');
   }
     
 
-  //not completed have to the last statement
+  //not completed have to do the last statement
