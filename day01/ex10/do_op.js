@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/26 20:10:22 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/28 20:32:40 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/29 17:11:11 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ s’agit de réaliser l’opération et d’afficher le résultat. Le programme 
 gestion d’erreur, hormis le nombre de paramètres fournis. Espaces et tabulations peuvent
 être présents dans les 3 paramètres*/
 
-if(process.argv.length != 5)
+if(process.argv.length != 5){
   console.log("incorrect Parameters")
   process.exit()
+}
 
-input = process.argv.slice(2).join('')
-console.log(eval(input))
+  input = process.argv.slice(2).join('')
+    return console.log(eval(input))

@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/28 20:25:00 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/12/29 16:16:28 by ahoussei         ###   ########.fr       */
+/*   Updated: 2018/12/29 16:59:25 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,14 @@ ne serait pas correcte. Il peut ne pas y avoir d’espace entre les chiffres et 
 bien plusieurs. Le résultat attendu reste le même */
 
 
-if(process.argv.length != 3)
+if(process.argv.length != 3 || process.argv[2] === "")
     return process.stdout.write("Incorrect parameters")
 
 try{
     input = process.argv.slice(2).join('')
       return console.log(eval(input))
 } catch (err){
-    if(input.length > 2) 
-       process.stdout.write("Syntax error")
+       return process.stdout.write("Syntax error")
 }
   
 
