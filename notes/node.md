@@ -14,4 +14,4 @@
 - Every file in a node applications is considered a module. The variables and functions defined in that module are scoped in that file
 
 - Tools like JSHint scan your code for error at compile time
-- In a module we can export a single function or an object
+- In a module we can export a single function or an object. In NodeJs every JavaScript file is a module.
