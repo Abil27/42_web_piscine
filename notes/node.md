@@ -15,3 +15,14 @@
 
 - Tools like JSHint scan your code for error at compile time
 - In a module we can export a single function or an object. In NodeJs every JavaScript file is a module.
+
+- npm ls : to list all the install packages
+
+- Some useful packagea
+  ** node-dev
+  ** js-hint
+  ** httpster
+  ** express
+  ** cors
+  ** body-parser
+  ** underscore
