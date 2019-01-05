@@ -6,9 +6,13 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/03 20:27:58 by ahoussei          #+#    #+#             */
-/*   Updated: 2019/01/03 21:07:41 by ahoussei         ###   ########.fr       */
+/*   Updated: 2019/01/04 15:32:28 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
+// Créez une page print_get.php qui affiche toutes les variables passées dans l’url
+
 
 // http://usefulangle.com/post/78/javascript-get-url-parameters
 

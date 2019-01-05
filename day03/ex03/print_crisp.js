@@ -6,9 +6,12 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/04 12:32:20 by ahoussei          #+#    #+#             */
-/*   Updated: 2019/01/04 15:29:08 by ahoussei         ###   ########.fr       */
+/*   Updated: 2019/01/04 15:32:07 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Créez une page cookie_crisp.php qui permet de créer, lire, et effacer un cookie
+
 
 // https://www.w3schools.com/js/js_cookies.asp
 // https://plainjs.com/javascript/utilities/set-cookie-get-cookie-and-delete-cookie-5/

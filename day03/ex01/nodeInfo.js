@@ -6,9 +6,11 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/03 19:12:22 by ahoussei          #+#    #+#             */
-/*   Updated: 2019/01/03 20:22:56 by ahoussei         ###   ########.fr       */
+/*   Updated: 2019/01/04 15:33:17 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Créez une page phpinfo.php qui exécute et affiche le résultat de nodeInfo(l'equivalent de phpinfo() ;
 
 const http = require('http');
 const nodeInfo = require('nodejs-info');
