@@ -26,3 +26,4 @@
   ** cors
   ** body-parser
   ** underscore
+  ** nodemon
