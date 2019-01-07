@@ -1,3 +1,4 @@
+<!--
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
@@ -9,7 +10,7 @@
 #    Updated: 2018/12/31 23:19:45 by ahoussei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
+-->
 
 - Every file in a node applications is considered a module. The variables and functions defined in that module are scoped in that file
 
@@ -18,7 +19,10 @@
 
 - npm ls : to list all the install packages
 
-- Some useful packagea
+- "mongoose" :"^4.14.7" // Major-Minor-Patch ==> 4.x
+- "mongoose" :"~4.14.7" // Major-Minor-Patch ==> 4.14.x
+
+* Some useful packagea
   ** node-dev
   ** js-hint
   ** httpster
