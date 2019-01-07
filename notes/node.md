@@ -18,6 +18,8 @@
 
 - npm ls : to list all the installed packages
 
+- We can set an environment variable on man usin *export PORT=number* eg *export PORT=5000*
+
 - Some useful packagea
   ** node-dev
   ** js-hint
