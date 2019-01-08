@@ -28,6 +28,8 @@
 - "mongoose" :"^4.14.7" // Major-Minor-Patch ==> 4.x
 - "mongoose" :"~4.14.7" // Major-Minor-Patch ==> 4.14.x
 
+- We can set the development env by using **export NODE_ENV=production**
+
 * Some useful package
   ** node-dev
   ** js-hint
@@ -42,4 +44,8 @@
   ** csurf 
   ** helmet
   ** joi // for input validation
+  ** morgan
+  ** config 
+  ** debug
+  ** pug
 
