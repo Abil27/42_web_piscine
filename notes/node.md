@@ -19,16 +19,16 @@
 
 - npm ls : to list all the installed packages
 
-<<<<<<< HEAD
 - We can set an environment variable on man usin *export PORT=number* eg *export PORT=5000*
 
-- Some useful packagea
-=======
+- Some useful package
+
+- Query string parameters are parameters we add in a url after a question mark. **req.query** helps you to read parameters from url
+
 - "mongoose" :"^4.14.7" // Major-Minor-Patch ==> 4.x
 - "mongoose" :"~4.14.7" // Major-Minor-Patch ==> 4.14.x
 
-* Some useful packagea
->>>>>>> 82d7a9b64c5172a0681f317ac488c506109e53b9
+* Some useful package
   ** node-dev
   ** js-hint
   ** httpster
@@ -37,10 +37,9 @@
   ** body-parser
   ** underscore
   ** nodemon
-<<<<<<< HEAD
-=======
   ** client-sessions
   ** bcryptjs 
   ** csurf 
   ** helmet
->>>>>>> de302c06134a3d1eb582d69bea94a1b49bfcf955
+  ** joi // for input validation
+

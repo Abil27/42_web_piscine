@@ -6,17 +6,23 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/07 11:31:07 by ahoussei          #+#    #+#             */
-/*   Updated: 2019/01/07 13:54:17 by ahoussei         ###   ########.fr       */
+/*   Updated: 2019/01/07 19:32:31 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // loading needed modules
+const logger = require('./logger')
 const Joi = require('joi')
 const express = require('express')
 const app = express();
 
 //in order to use json in postman
 app.use(express.json())
+app.use(express.urlencoded({ extended: true })) // return the req body
+app.use(express.static('public')) // to serve static files
+
+//middleware function
+app.use(logger)
 
 const courses = [
   {id: 1, name: 'courses1'},
@@ -41,7 +47,7 @@ app.get('/api/courses/:id', (req, res) => {
   });
   // send a 404 if course not found
   if(!course) {
-    res.status(404).send('The course with the given Id is not found')
+    return res.status(404).send('The course with the given Id is not found')
   } else {res.send(course)}
 });
 
@@ -51,7 +57,7 @@ app.post('/api/courses', (req, res) => {
   //joi schema for data validation
   const { error } = validateCourse(req.body)
   if(error) {
-    res.status(400).send(error.details[0].message)
+    return res.status(400).send(error.details[0].message)
   }
   //store course
   const course = {
@@ -69,13 +75,15 @@ app.put('/api/courses/:id', (req, res) => {
     return c.id === parseInt(req.params.id)
   })
   //If not return a 404 and // send a 404 if course not found
-  if(!course){ res.status(404).send("The course the given Id doesn't exist")}
+  if(!course){ 
+    return res.status(404).send("The course the given Id doesn't exist")
+  }
   
 
   //if exist then check if the course is valid
   const { error } = validateCourse(req.body)
   if(error){
-    res.status(400).send(error.details[0].message)
+    return res.status(400).send(error.details[0].message)
   }
 
   //update the course
@@ -91,7 +99,9 @@ app.delete('/api/courses/:id', (req, res) => {
     return c.id === parseInt(req.params.id)
   })
   //If not return a 404 and // send a 404 if course not found
-  if(!course){ res.status(404).send("The course the given Id doesn't exist")}
+  if(!course){ 
+    return res.status(404).send("The course the given Id doesn't exist")
+  }
 
   //to delete a course, we need to find the index of the course
   const index = courses.indexOf(course)
