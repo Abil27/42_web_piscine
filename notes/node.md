@@ -19,7 +19,7 @@
 
 - npm ls : to list all the installed packages
 
-- We can set an environment variable on man usin *export PORT=number* eg *export PORT=5000*
+- We can set an environment variable on man usin _export PORT=number_ eg _export PORT=5000_
 
 - Some useful package
 
@@ -40,12 +40,12 @@
   ** underscore
   ** nodemon
   ** client-sessions
-  ** bcryptjs 
-  ** csurf 
+  ** bcryptjs
+  ** csurf
   ** helmet
   ** joi // for input validation
   ** morgan
-  ** config 
+  ** config
   ** debug
   ** pug
-
+  ** mongoose
