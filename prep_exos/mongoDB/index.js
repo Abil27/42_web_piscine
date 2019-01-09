@@ -6,7 +6,7 @@
 /*   By: ahoussei <ahoussei@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/08 13:58:55 by ahoussei          #+#    #+#             */
-/*   Updated: 2019/01/08 15:57:37 by ahoussei         ###   ########.fr       */
+/*   Updated: 2019/01/08 22:00:25 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,17 @@ async function getCourse() {
   console.log(course);
 }
 
-getCourse();
+async function updateCourse(id) {
+  const course = await Course.findById(id);
+  if (!course) return;
+
+  course.set({
+    isPublished: true,
+    author: "Abil"
+  });
+
+  const result = await course.save();
+  console.log(result);
+}
+
+updateCourse("5a68fde3f09ad7646ddec17e");
