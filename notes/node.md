@@ -49,3 +49,7 @@
   ** debug
   ** pug
   ** mongoose
+  ** passport
+  ** passport-local
+  ** express-session
+  ** ejs
