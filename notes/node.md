@@ -53,3 +53,4 @@
   ** passport-local
   ** express-session
   ** ejs
+  \*\* passport-local-mongoose
