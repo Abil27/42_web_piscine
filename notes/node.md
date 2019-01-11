@@ -53,4 +53,5 @@
   ** passport-local
   ** express-session
   ** ejs
-  \*\* passport-local-mongoose
+  ** passport-local-mongoose
+  ** mongo-hacker
